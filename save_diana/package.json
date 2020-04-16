@@ -10,11 +10,10 @@
     "next": "^9.3.4",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "react-router-dom": "^5.1.2",
-    "react-router-hash-link": "^1.2.2",
     "three": "^0.115.0",
     "typeface-roboto": "0.0.75"
   },
+  "license": "UNLICENSED",
   "devDependencies": {
     "file-loader": "^6.0.0",
     "url-loader": "^4.1.0"

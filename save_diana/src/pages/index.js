@@ -6,6 +6,11 @@ import ItemGrid from "../components/itemGrid";
 import HomeCta from "../components/homeCta";
 import MissionStatement from "../components/missionStatment";
 
+// Only need to use this pattern if we are going to make reusable
+// notice the new component, WrapperBox - if we want to reuse then it
+//needs to be  in /components, otherwise, just write a single page
+// style like you did in `const style =...`
+//
 const WrapperBox = withStyles({
   root: {
     background: "#a4d8ef",
@@ -121,3 +126,19 @@ const App = () => (
 );
 
 export default withStyles(styles)(App);
+// the HOC (higher-order-component) pattern works, but hooks are more widely accepted as better
+// you end up with this:
+/*
+const styles (theme => ({root:{...}})) 
+// or 
+const styles = {root:...}
+// then
+const useStyles = makeStyles(styles)
+// then in your component...
+const MyComponent = (props) => {
+  const classes = useStyles();
+
+  return <Thing className={classes.root} />
+}
+
+*/
