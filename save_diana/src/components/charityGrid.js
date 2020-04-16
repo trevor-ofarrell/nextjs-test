@@ -2,11 +2,11 @@ import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import Paper from "@material-ui/core/Paper";
 import Grid from "@material-ui/core/Grid";
-import ButtonAppBar from "../components/buttonAppBar";
+import ButtonAppBar from "./buttonAppBar";
 import { withStyles, responsiveFontSizes } from "@material-ui/core/styles";
 import { Button, Backdrop, AppBar, Box, Container } from "@material-ui/core";
-import SimpleCard from "../components/userInfo";
-import Feed from "../components/feed";
+import SimpleCard from "./userInfo";
+import Feed from "./feed";
 import Card from "@material-ui/core/Card";
 import CardActions from "@material-ui/core/CardActions";
 import CardContent from "@material-ui/core/CardContent";
@@ -14,9 +14,9 @@ import MonetizationOnIcon from "@material-ui/icons/MonetizationOn";
 import FavoriteIcon from "@material-ui/icons/Favorite";
 import Typography from "@material-ui/core/Typography";
 import PersonAddIcon from "@material-ui/icons/PersonAdd";
-import Followers from "../components/followers";
-import UserInfo from "../components/userInfo";
-import Post from "../components/posts";
+import Followers from "./followers";
+import UserInfo from "./userInfo";
+import Post from "./posts";
 
 const useStyles = makeStyles((theme) => ({
   root: {
