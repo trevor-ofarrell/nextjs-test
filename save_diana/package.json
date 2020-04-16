@@ -1,23 +1,21 @@
 {
-   "scripts": {
-      "dev": "next",
-      "build": "next build",
-      "start": "next start"
-   },
-   "dependencies": {
-      "@material-ui/core": "^4.9.9",
-      "@material-ui/icons": "^4.9.1",
-      "next": "^9.3.4",
-      "react": "^16.13.1",
-      "react-dom": "^16.13.1",
-      "react-router-dom": "^5.1.2",
-      "react-router-hash-link": "^1.2.2",
-      "styled-components": "^5.1.0",
-      "three": "^0.115.0",
-      "typeface-roboto": "0.0.75"
-   },
-   "devDependencies": {
-      "file-loader": "^6.0.0",
-      "url-loader": "^4.1.0"
-   }
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "@material-ui/core": "^4.9.9",
+    "@material-ui/icons": "^4.9.1",
+    "next": "^9.3.4",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "three": "^0.115.0",
+    "typeface-roboto": "0.0.75"
+  },
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "file-loader": "^6.0.0",
+    "url-loader": "^4.1.0"
+  }
 }
