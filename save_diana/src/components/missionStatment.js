@@ -8,7 +8,7 @@ const StyledBoxBlueBottom = withStyles({
     background: "#a4d8ef",
     width: "100%",
     minWidth: "100%",
-    height: "600px",
+    height: "1150px",
     display: "block",
     textAlign: "center",
     position: "relative",

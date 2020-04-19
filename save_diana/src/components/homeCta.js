@@ -4,7 +4,7 @@ import Paper from '@material-ui/core/Paper';
 import Grid from '@material-ui/core/Grid';
 import Typography from '@material-ui/core/Typography';
 import { Divider } from '@material-ui/core';
-import { HashLink as MyLink, BrowserRouter } from 'react-router-hash-link';
+
 
 const useStyles = makeStyles((theme) => ({
     root: {

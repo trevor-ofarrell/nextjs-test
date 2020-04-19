@@ -4,6 +4,7 @@ import { withStyles, responsiveFontSizes } from "@material-ui/core/styles";
 import ButtonAppBar from "../components/buttonAppBar";
 import ItemGrid from "../components/itemGrid";
 import HomeCta from "../components/homeCta";
+import Footer from '../components/footer';
 import MissionStatement from "../components/missionStatment";
 
 // Only need to use this pattern if we are going to make reusable
@@ -122,6 +123,7 @@ const App = () => (
       <ItemGrid />
     </StyledBoxWhite>
     <MissionStatement />
+    <Footer />
   </WrapperBox>
 );
 

@@ -13,6 +13,8 @@ import { withStyles, responsiveFontSizes } from "@material-ui/core/styles";
 import ProfileNavBar from "../components/profileNavBar";
 // import GridTest from "../components/itemGrid";
 import UserGrid from "../components/userGrid";
+import Footer from '../components/footer';
+
 
 const WrapperBox = withStyles({
   root: {
@@ -49,6 +51,7 @@ export default function Profile() {
       <StyledBoxBlue style={{ paddingTop: "30px", paddingBottom: "50px" }}>
         <UserGrid />
       </StyledBoxBlue>
+      <Footer />
     </WrapperBox>
   );
 }

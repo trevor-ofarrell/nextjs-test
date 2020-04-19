@@ -6,6 +6,8 @@ import CharityNavBar from "../components/charityNavBar";
 import GridTest from "../components/itemGrid";
 import UserGrid from "../components/userGrid";
 import CharityGrid from "../components/charityGrid";
+import Footer from '../components/footer';
+
 
 const WrapperBox = withStyles({
   root: {
@@ -33,13 +35,18 @@ const StyledBoxBlue = withStyles({
   },
 })(Container);
 
-export default function Profile() {
+export default function Charity() {
+  
   return (
+
     <WrapperBox>
       <CharityNavBar />
       <StyledBoxBlue style={{ paddingTop: "30px", paddingBottom: "50px" }}>
         <CharityGrid />
       </StyledBoxBlue>
+      <Footer />
     </WrapperBox>
-  );
+ 
+ );
+
 }
