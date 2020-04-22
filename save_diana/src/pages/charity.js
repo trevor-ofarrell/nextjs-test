@@ -40,7 +40,7 @@ export default function Charity() {
   return (
 
     <WrapperBox maxWidth="fixed">
-      <CharityNavBar maxWidth="fixed"/>
+      <CharityNavBar />
       <StyledBoxBlue style={{ paddingTop: "30px", paddingBottom: "50px" }} maxWidth="fixed">
         <CharityGrid />
       </StyledBoxBlue>

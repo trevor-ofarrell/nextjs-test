@@ -20,6 +20,7 @@ const StyledBoxBlueBottom = withStyles({
     color: "white",
     fontSize: "60px",
     fontFamily: "Arial, Helvetica, sans-serif",
+    fontWeight: 'bold'
   },
 })(Container);
 
@@ -33,7 +34,7 @@ export default function MissionStatement() {
         style={{
           display: "inline-block",
           paddingTop: "-1500px",
-          maxWidth: "80%",
+          maxWidth: "75%",
           zIndex: "2",
           position: "relative",
           textAlign: "center",
@@ -42,7 +43,7 @@ export default function MissionStatement() {
         }}
       >
         <Typography variant="h2" component="h2" style={{ fontWeight: 'bold', paddingBottom: '60px' }}>
-          SAVE STATEMENT
+          MISSION
         </Typography>
         <br />
         <Typography variant="h5" component="h2">
@@ -50,17 +51,17 @@ export default function MissionStatement() {
           WORLD?
         </Typography>
         <br />
-        <Typography variant="h6" component="p">
+        <Typography variant="h5" component="p">
           {" "}
           IF THE SECONDS WE SPENT WAITING AND SCROLLING, WE COULD USE TO SAVE
           LIVES.
         </Typography>
         <br />
-        <Typography variant="h6" component="p">
+        <Typography variant="h5" component="p">
           WHAT IF WE COULD DO THIS BY JUST GETTING DRESSED.{" "}
         </Typography>
         <br />
-        <Typography variant="h6" component="p">
+        <Typography variant="h5" component="p">
           SAVE ASKS THAT YOU ACKNOWLEDGE THE UNSETTLING TRUTH THAT OUR PLANET
           NEEDS HELP TO TAKE THE FIRST STEP. FOR IF SOMETHING IS TO BE SAVED, IT
           MUST FIRST BE SEEN.
