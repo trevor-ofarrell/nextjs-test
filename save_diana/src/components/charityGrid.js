@@ -13,7 +13,7 @@ import Post from "./posts";
 const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
-    maxWidth: "80%",
+    maxWidth: "100%",
     display: 'column'
   },
   paper: {
@@ -29,7 +29,7 @@ export default function CenteredGrid() {
   return (
     <Container className={classes.root}>
       <Grid container spacing={3}>
-        <Grid item xs={10} style={{ maxHeight: "100%", height: "100%" }}>
+        <Grid item sm={10} xs={12} style={{ maxHeight: "100%", height: "100%" }}>
           <Paper elevation={0}>
             <Grid container spacing={0}>
               <Grid
@@ -43,7 +43,7 @@ export default function CenteredGrid() {
             </Grid>
           </Paper>
         </Grid>
-        <Grid item xs={2} style={{ maxHeight: "100%", height: "100%" }}>
+        <Grid item sm={2} xs={12} style={{ maxHeight: "100%", height: "100%" }}>
           <Card elevation={0} style={{ textAlign: "center" }}>
             <MonetizationOnIcon
               fontSize="large"

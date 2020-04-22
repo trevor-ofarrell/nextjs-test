@@ -63,7 +63,8 @@ const StyledBoxWhite = withStyles({
 const HomeOptions = withStyles({
   root: {
     background: "#9dd8f4",
-    width: "100%",
+    width: "100%", width: "100%",
+    minWidth: "100%",
     height: "200px",
     display: "flex",
     justifyContent: "center",

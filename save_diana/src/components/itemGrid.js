@@ -20,7 +20,7 @@ const useStyles = makeStyles((theme) => ({
     color: "black",
     fontSize: "25px",
     width: "70%",
-    maxWidth: "70%",
+    maxWidth: "100%",
     maxheight: "70%",
     marginTop: "0px",
     marginBottom: "100px",
