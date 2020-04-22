@@ -6,6 +6,7 @@ import ItemGrid from "../components/itemGrid";
 import HomeCta from "../components/homeCta";
 import Footer from '../components/footer';
 import MissionStatement from "../components/missionStatment";
+import Globe from '../components/video'
 
 // Only need to use this pattern if we are going to make reusable
 // notice the new component, WrapperBox - if we want to reuse then it
@@ -14,17 +15,18 @@ import MissionStatement from "../components/missionStatment";
 //
 const WrapperBox = withStyles({
   root: {
-    background: "#a4d8ef",
+    background: "#9dd8f4",
     width: "100%",
     height: "100%",
     display: "table",
+    overflowY: 'hidden',
     zIndex: "unset",
   },
-})(Box);
+})(Container);
 
 const StyledBoxBlue = withStyles({
   root: {
-    background: "#a4d8ef",
+    background: "#9dd8f4",
     width: "100%",
     minWidth: "100%",
     height: "600px",
@@ -35,10 +37,11 @@ const StyledBoxBlue = withStyles({
     alignItems: "center",
     marginLeft: "0px",
     color: "white",
+    overflowY: 'hidden',
     fontSize: "60px",
     fontFamily: "Arial, Helvetica, sans-serif",
   },
-})(Box);
+})(Container);
 
 const StyledBoxWhite = withStyles({
   root: {
@@ -49,6 +52,7 @@ const StyledBoxWhite = withStyles({
     display: "flex",
     justifyContent: "center",
     alignItems: "center",
+    overflowY: 'hidden',
     marginLeft: "0px",
     color: "white",
     fontSize: "60px",
@@ -58,7 +62,7 @@ const StyledBoxWhite = withStyles({
 
 const HomeOptions = withStyles({
   root: {
-    background: "#a4d8ef",
+    background: "#9dd8f4",
     width: "100%",
     height: "200px",
     display: "flex",
@@ -68,6 +72,8 @@ const HomeOptions = withStyles({
     color: "white",
     fontSize: "25px",
     fontFamily: "Arial, Helvetica, sans-serif",
+    overflowY: 'hidden'
+
   },
 })(Box);
 
@@ -77,6 +83,7 @@ const styles = {
   root: {
     flexGrow: 1,
     lineHeight: "20px",
+    overflowY: 'hidden'
   },
   br: {
     lineHeight: "20px",
@@ -89,26 +96,14 @@ const styles = {
 };
 
 const App = () => (
-  <WrapperBox>
+  <WrapperBox maxWidth="fixed">
     <ButtonAppBar />
-    <StyledBoxBlue>
-      <img
-        src="/Ellipse 47.png"
-        style={{
-          position: "relative",
-          height: "100%",
-          maxHeight: "100%",
-          maxWidth: "auto",
-          display: "block",
-          marginLeft: "auto",
-          marginRight: "auto",
-          zIndex: "1",
-        }}
-      />
+    <StyledBoxBlue maxWidth="fixed">
+    <Globe style={{overflowY: 'hidden'}} />
       <h2
         style={{
           whiteSpace: "pre-line",
-          marginTop: "-420px",
+          marginTop: "-550px",
           zIndex: "2",
           position: "relative",
         }}

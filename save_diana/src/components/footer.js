@@ -5,10 +5,10 @@ import { Button, Backdrop, AppBar, Box, Container } from "@material-ui/core";
 
 const StyledBoxBlue = withStyles({
     root: {
-      background: "#a4d8ef",
+      background: "#9dd8f4",
       width: "100%",
       minWidth: "100%",
-      height: "5.5em",
+      height: "6em",
       display: "block",
       textAlign: "center",
       position: "relative",
@@ -19,14 +19,14 @@ const StyledBoxBlue = withStyles({
       fontSize: "60px",
       fontFamily: "Arial, Helvetica, sans-serif",
     },
-  })(Box);
+  })(Container);
 
   export default function footer() {
 
     return(
 
         <StyledBoxBlue>
-            <Grid container spacing={10} style={{ textAlign: 'left', paddingRight: '50px', marginTop: '100px'}}>
+            <Grid container spacing={10} style={{ textAlign: 'left', paddingRight: '70px', marginTop: '100px'}}>
                 <Grid item xs={6}>
                     <Typography variant='h4' component='h2' style={{ fontWeight: 'bold', marginLeft: '50px' }}>
                         Wearible Charity
@@ -39,7 +39,7 @@ const StyledBoxBlue = withStyles({
                 </Grid>
                 <Grid item xs={6}>
                     <Grid container spacing={0} style={{ textAlign: 'left', paddingBottom: '50px' }}>
-                        <Grid item xs={6} style={{ textAlign: 'center' }}>
+                        <Grid item xs={4} style={{ textAlign: 'left' }}>
                             <Typography variant='h6' component='p' style={{fontWeight: 'bold'}}>
                                 Company
                             </Typography>
@@ -80,7 +80,7 @@ const StyledBoxBlue = withStyles({
                                 Website terms
                             </Typography>
                         </Grid>
-                        <Grid item xs={3} style={{ textAlign: 'center' }}>
+                        <Grid item xs={3} style={{ textAlign: 'left' }}>
                             <Typography variant='h6' component='p' style={{ marginLeft: '-50px' }}>
                                 Privacy Policy
                             </Typography>

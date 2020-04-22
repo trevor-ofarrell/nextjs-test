@@ -25,7 +25,7 @@ const WrapperBox = withStyles({
     display: "table",
     zIndex: "unset",
   },
-})(Box);
+})(Container);
 
 const StyledBoxBlue = withStyles({
   root: {
@@ -46,7 +46,7 @@ const StyledBoxBlue = withStyles({
 
 export default function Profile() {
   return (
-    <WrapperBox>
+    <WrapperBox maxWidth="fixed">
       <ProfileNavBar />
       <StyledBoxBlue style={{ paddingTop: "30px", paddingBottom: "50px" }}>
         <UserGrid />

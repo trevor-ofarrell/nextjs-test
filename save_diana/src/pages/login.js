@@ -1,6 +1,7 @@
 import { Grid, Typography } from "@material-ui/core";
 import { withStyles, responsiveFontSizes } from "@material-ui/core/styles";
 import { Button, Backdrop, AppBar, Box, Container } from "@material-ui/core";
+import LoginForm from '../components/loginForm'
 
 
 const StyledBoxBlue = withStyles({
@@ -21,7 +22,7 @@ const StyledBoxBlue = withStyles({
     },
   })(Box);
 
-
+  
 export default function Login() {
 
   return(
@@ -50,6 +51,7 @@ export default function Login() {
           position: "relative",
         }}
       ></h2>
+      <LoginForm />
     </StyledBoxBlue>
 
   )

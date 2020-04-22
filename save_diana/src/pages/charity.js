@@ -17,7 +17,7 @@ const WrapperBox = withStyles({
     display: "table",
     zIndex: "unset",
   },
-})(Box);
+})(Container);
 
 const StyledBoxBlue = withStyles({
   root: {
@@ -39,9 +39,9 @@ export default function Charity() {
   
   return (
 
-    <WrapperBox>
-      <CharityNavBar />
-      <StyledBoxBlue style={{ paddingTop: "30px", paddingBottom: "50px" }}>
+    <WrapperBox maxWidth="fixed">
+      <CharityNavBar maxWidth="fixed"/>
+      <StyledBoxBlue style={{ paddingTop: "30px", paddingBottom: "50px" }} maxWidth="fixed">
         <CharityGrid />
       </StyledBoxBlue>
       <Footer />

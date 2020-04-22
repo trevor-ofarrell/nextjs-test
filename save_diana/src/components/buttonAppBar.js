@@ -10,6 +10,7 @@ import Menu from '@material-ui/core/Menu';
 import AccountCircle from '@material-ui/icons/AccountCircle';
 import MenuItem from '@material-ui/core/MenuItem';
 import Link from 'next/link';
+import { Box, Container } from "@material-ui/core";
 
 
 const styles = {

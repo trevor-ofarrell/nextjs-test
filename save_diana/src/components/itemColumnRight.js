@@ -28,7 +28,7 @@ export default function ItemColumnRight() {
   const classes = useStyles();
 
   return (
-    <div className={classes.root}>
+    <Container className={classes.root}>
       <Grid
         container
         direction="column"
@@ -38,21 +38,21 @@ export default function ItemColumnRight() {
         <Grid container spacing={6}>
           <Grid item sm={12}>
             <Paper elevation={0} style={{fontSize: '35px', fontWeight: 'bold'}}>
-              <Typography variant="h4" component="h2" style={{fontWeight: 'bold'}}>Austrialian Bush Fire</Typography>
+              <Typography variant="h4" component="h2" style={{fontWeight: 'bold'}}>Tapable shirt benefitting Bay Area Homeless Crisis</Typography>
             </Paper>
           </Grid>
           <Grid item sm={12}>
             <Paper elevation={0} style={{marginBottom: '20px'}}>
               <Typography variant="h5" component="p" style={{ lineHeight: '35px' }}>
-                Fair Trade, 100% cotton T-shirt with scannable NFC tag enabling donations to Australian Wildlife Conservancy
+              100% cotton, machine washable T-shirt, embedded NFC for tapable donations. 
               </Typography>
             </Paper>
           </Grid>
           <Grid item sm={12}>
             <Paper elevation={0} style={{fontSize: '18px'}}>
               <Typography variant="h6" component="p" style={{ lineHeight: '35px' }}>
-                The Australlian bush fires have been estimated to kill 500 million animals at least 24 humans, 
-                and burnes 15 million acres to date. Thousands of people have been displaced and permanently lost their homes.
+              The Australlian bush fires have been estimated to kill 500 million animals at least 24 humans,
+               and burnes 15 million acres to date. Thousands of people have been displaced and permanently lost their homes.
               </Typography>
             </Paper>
           </Grid>
@@ -61,6 +61,6 @@ export default function ItemColumnRight() {
           </Grid>
         </Grid>
       </Grid>
-    </div>
+    </Container>
   );
 }

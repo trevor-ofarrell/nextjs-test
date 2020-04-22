@@ -5,13 +5,11 @@ import Grid from '@material-ui/core/Grid';
 import ButtonAppBar from '../components/buttonAppBar';
 import { withStyles, responsiveFontSizes } from '@material-ui/core/styles';
 import { Button, Backdrop, AppBar, Box, Container } from '@material-ui/core';
-import SimpleCard from '../components/userInfo'
 import Feed from '../components/feed'
 import Card from '@material-ui/core/Card';
 import MonetizationOnIcon from '@material-ui/icons/MonetizationOn';
 import FavoriteIcon from '@material-ui/icons/Favorite';
 import Typography from '@material-ui/core/Typography';
-import PersonAddIcon from '@material-ui/icons/PersonAdd';
 import Followers from '../components/followers'
 import UserPanel from '../components/userInfo';
 import Donations from '../components/donations';
@@ -43,7 +41,7 @@ const StyledBoxBlue = withStyles({
       fontSize: "60px",
       fontFamily: "Arial, Helvetica, sans-serif"
     },
-  })(Box);
+  })(Container);
   
   const StyledBoxWhite = withStyles({
     root: {
@@ -59,13 +57,13 @@ const StyledBoxBlue = withStyles({
       fontSize: "60px",
       fontFamily: "Arial, Helvetica, sans-serif"
     },
-  })(Box);
+  })(Container);
 
 export default function CenteredGrid() {
   const classes = useStyles();
 
   return (
-    <div className={classes.root}>
+    <Container className={classes.root}>
       <Grid container spacing={3}>
         <Grid item xs={8}>
          <Paper elevation={0}>
@@ -106,6 +104,6 @@ export default function CenteredGrid() {
           <Donations />
         </Grid>
       </Grid>
-    </div>
+    </Container>
   );
 }

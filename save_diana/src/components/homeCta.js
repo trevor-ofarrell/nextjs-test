@@ -4,7 +4,10 @@ import Paper from '@material-ui/core/Paper';
 import Grid from '@material-ui/core/Grid';
 import Typography from '@material-ui/core/Typography';
 import { Divider } from '@material-ui/core';
-
+import { Button, Backdrop, AppBar, Box, Container } from "@material-ui/core";
+import dynamic from 'next/dynamic';
+import { ScrollTo, ScrollArea } from "react-scroll-to";
+import MissionStatement from './missionStatment'
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -18,7 +21,8 @@ const useStyles = makeStyles((theme) => ({
       alignItems: "center",
       justifyContent: "center",
       maxWidth: '50%',
-      textAlign: 'center'
+      textAlign: 'center',
+      paddingRight: '80px'
     },
     Paper: {
       padding: theme.spacing(10),
@@ -34,21 +38,27 @@ export default function homeCta() {
     const classes = useStyles()
 
     return (
-        <div className={classes.root}>
-            <Grid container spacing={10} style={{ marginTop: '60px', marginBottom: '-55px' }}>
+        <Container className={classes.root}>
+            <Grid container spacing={0} style={{ marginTop: '60px', marginBottom: '-55px' }}>
                 <Grid item xs={6}>
-                    <a href="" style={{marginLeft: "50px", textDecoration: 'none', color: 'white'}}>Mission Statement</a>
+                    <a href="#mishstate" style={{marginLeft: "60px", marginBottom: '10px' , textDecoration: 'none', color: 'white'}}>MISSION STATMENT</a>
                 </Grid>
                 <Grid item xs={6}>
-                    <a href="" style={{marginLeft: "50px", textDecoration: 'none', color: 'white'}}>Click to Shop</a>
+                    <a href="#shop" style={{marginLeft: "60px", textDecoration: 'none', color: 'white'}}>CLICK TO SHOP</a>
                 </Grid>
-                <Grid item xs={6} style={{ textAlign: 'center' }}>
-                    <div style={{ position: 'absolute', width: '60px', height: '0px', top: '840px', borderWidth: '0px', borderColor: 'black', borderStyle:'solid', transform: 'rotate(90deg)' }} />
+                <Grid item xs={3}>
+                    <div/>
                 </Grid>
-                <Grid item xs={6} style={{ textAlign: 'center' }}>
-                    <div style={{ position: 'absolute', width: '60px', height: '0px', top: '840px', borderWidth: '0px', borderColor: 'black', borderStyle:'solid', transform: 'rotate(90deg)' }} />
+                <Grid item xs={3} style={{ textAlign: 'center', paddingTop: '30px'}}>
+                    <div style={{ position: 'absolute', width: '60px', height: '0px', top: '840px', borderWidth: '1px', borderColor: 'white', borderStyle:'solid', transform: 'rotate(90deg)' }} />
+                </Grid>
+                <Grid item xs={3}>
+                    <div/>
+                </Grid>
+                <Grid item xs={3} style={{ textAlign: 'center', paddingTop: '30px' }}>
+                    <div style={{ position: 'absolute', width: '60px', height: '0px', top: '840px', borderWidth: '1px', borderColor: 'whitea', borderStyle:'solid', transform: 'rotate(90deg)' }} />
                 </Grid>
             </Grid>
-        </div>
+        </Container>
     )
 }

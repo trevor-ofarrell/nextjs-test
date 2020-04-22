@@ -42,7 +42,7 @@ export default function ItemGrid() {
   const classes = useStyles();
 
   return (
-    <div className={classes.root}>
+    <Container className={classes.root} id="shop">
       <Grid container spacing={10}>
         <Grid item sm={12}>
           <Paper elevation={0} className={classes.paper}>
@@ -71,6 +71,6 @@ export default function ItemGrid() {
           <ItemColumnRight />
         </Grid>
       </Grid>
-    </div>
+    </Container>
   );
 }

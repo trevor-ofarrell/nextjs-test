@@ -2,19 +2,11 @@ import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import Paper from "@material-ui/core/Paper";
 import Grid from "@material-ui/core/Grid";
-import ButtonAppBar from "./buttonAppBar";
 import { withStyles, responsiveFontSizes } from "@material-ui/core/styles";
 import { Button, Backdrop, AppBar, Box, Container } from "@material-ui/core";
-import SimpleCard from "./userInfo";
-import Feed from "./feed";
 import Card from "@material-ui/core/Card";
-import CardActions from "@material-ui/core/CardActions";
-import CardContent from "@material-ui/core/CardContent";
 import MonetizationOnIcon from "@material-ui/icons/MonetizationOn";
-import FavoriteIcon from "@material-ui/icons/Favorite";
 import Typography from "@material-ui/core/Typography";
-import PersonAddIcon from "@material-ui/icons/PersonAdd";
-import Followers from "./followers";
 import UserInfo from "./userInfo";
 import Post from "./posts";
 
@@ -22,6 +14,7 @@ const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
     maxWidth: "80%",
+    display: 'column'
   },
   paper: {
     padding: theme.spacing(2),
@@ -34,7 +27,7 @@ export default function CenteredGrid() {
   const classes = useStyles();
 
   return (
-    <div className={classes.root}>
+    <Container className={classes.root}>
       <Grid container spacing={3}>
         <Grid item xs={10} style={{ maxHeight: "100%", height: "100%" }}>
           <Paper elevation={0}>
@@ -76,6 +69,6 @@ export default function CenteredGrid() {
           <Post />
         </Grid>
       </Grid>
-    </div>
+    </Container>
   );
 }
