@@ -18,10 +18,9 @@ import Footer from '../components/footer';
 
 const WrapperBox = withStyles({
   root: {
-    background: "#a4d8ef",
+    background: "#9dd8f4",
     width: "100%",
-    maxHeight: "100%",
-    minHeight: "100%",
+    height: "100%",
     display: "table",
     zIndex: "unset",
   },
@@ -29,15 +28,12 @@ const WrapperBox = withStyles({
 
 const StyledBoxBlue = withStyles({
   root: {
-    background: "#a4d8ef",
+    background: "#9dd8f4",
     width: "100%",
-    minWidth: "100%",
-    maxHeight: "100%",
-    minHeight: "100%",
+    height: "100%",
     display: "flex",
     justifyContent: "center",
     alignItems: "center",
-    marginLeft: "0px",
     color: "white",
     fontSize: "60px",
     fontFamily: "Arial, Helvetica, sans-serif",
@@ -48,7 +44,7 @@ export default function Profile() {
   return (
     <WrapperBox maxWidth="fixed">
       <ProfileNavBar />
-      <StyledBoxBlue style={{ paddingTop: "30px", paddingBottom: "50px" }}>
+      <StyledBoxBlue maxWidth="fixed" style={{ paddingTop: "30px", paddingBottom: "50px" }} >
         <UserGrid />
       </StyledBoxBlue>
       <Footer />

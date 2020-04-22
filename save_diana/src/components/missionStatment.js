@@ -27,7 +27,7 @@ const StyledBoxBlueBottom = withStyles({
 export default function MissionStatement() {
   return (
     <StyledBoxBlueBottom
-      id="mishstate"
+      id="statement"
       style={{ paddingBottom: "6em", paddingTop: "3em" }}
     >
       <Container

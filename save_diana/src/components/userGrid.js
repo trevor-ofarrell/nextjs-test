@@ -18,6 +18,7 @@ import Donations from '../components/donations';
 const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
+    maxWidth: "100%",
   },
   paper: {
     padding: theme.spacing(2),
@@ -36,10 +37,10 @@ export default function CenteredGrid() {
         <Grid item sm={8} xs={12}>
          <Paper elevation={0}>
          <Grid container spacing={0}>
-          <Grid item xs={6} style={{ marginLeft: '20px', marginTop: '15px' }}>
+          <Grid item sm={6} xs={12} style={{ marginLeft: '20px', marginTop: '15px' }}>
             <UserPanel />
           </Grid>
-          <Grid item xs={5}>
+          <Grid item sm={5} xs={12}>
             <Card elevation={0} style={{ marginTop: '50px', marginLeft: '120px',  overflow: 'hidden' }}>
                 <Followers />
             </Card>

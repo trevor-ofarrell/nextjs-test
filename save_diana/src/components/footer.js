@@ -12,8 +12,8 @@ import {
 const StyledBoxBlue = withStyles({
     root: {
       background: "#9dd8f4",
-      maxWidth: "96%",
-      height: "6.5em",
+      maxWidth: "100%",
+      height: "auto",
       display: "block",
       textAlign: "center",
       position: "relative",
@@ -30,8 +30,8 @@ const StyledBoxBlue = withStyles({
     return(
 
         <StyledBoxBlue>
-            <Grid container spacing={10} style={{ textAlign: 'left', marginTop: '2em'}}>
-                <Grid item xs={6}>
+            <Grid container spacing={10} style={{ textAlign: 'left', marginTop: '2em', marginBottom: '50px'}}>
+                <Grid item sm={6} xs={12}>
                     <Typography variant='h4' component='h2' style={{ fontWeight: 'bold', marginLeft: '50px', paddingBottom: '30px'}}>
                         Wearible Charity
                     </Typography>
@@ -54,9 +54,9 @@ const StyledBoxBlue = withStyles({
                         </a>
                     </Container>
                 </Grid>
-                <Grid item xs={6}>
-                    <Grid container spacing={0} style={{ textAlign: 'left', paddingBottom: '50px', paddingLeft: '100px', fontFamily: 'poppins' }}>
-                        <Grid item xs={4} style={{ textAlign: 'left' }}>
+                <Grid item sm={6} xs={12}>
+                    <Grid container spacing={0} style={{ textAlign: 'left', paddingBottom: '50px', paddingLeft: '0px', fontFamily: 'poppins' }}>
+                        <Grid item xs={5} style={{ textAlign: 'left' }}>
                             <Typography variant='h6' component='p' style={{fontWeight: 'bold', paddingBottom: '15px'}}>
                                 Company
                             </Typography>
@@ -70,7 +70,7 @@ const StyledBoxBlue = withStyles({
                                 Contact Us
                             </Typography>
                         </Grid>
-                        <Grid item xs={6}>
+                        <Grid item xs={7}>
                         <Typography  variant='h6' component='p' style={{fontWeight: 'bold', paddingBottom: '15px'}}>
                                 Contact Us
                             </Typography>
@@ -81,23 +81,23 @@ const StyledBoxBlue = withStyles({
                                 +000 222 456-567
                             </Typography>
                             <Typography variant='h6' component='p' style={{fontWeight: 'bold'}}>
-                                Email: panichdiana@gmail.com
+                                diana@gmail.com
                             </Typography>
                         </Grid>
                     </Grid>
                 </Grid>
                     <Grid container spacing={10} style={{ paddingLeft: '80px', textAlign: 'right', borderTop: "1px solid #FFFFFF" }}>
-                        <Grid item xs={6} style={{ textAlign: 'left' }}>
+                        <Grid item sm={6} xs={12} style={{ textAlign: 'left' }}>
                             <Typography variant='h6' component='p'>
                                 @2020 All rights reserved.
                             </Typography>
                         </Grid>
-                        <Grid item xs={3} style={{ textAlign: 'right' }}>
+                        <Grid item sm={3}  xs={6} style={{ textAlign: 'right' }}>
                             <Typography variant='h6' component='p' style={{ marginLeft: '-50px' }}>
                                 Website terms
                             </Typography>
                         </Grid>
-                        <Grid item xs={3} style={{ textAlign: 'left' }}>
+                        <Grid item sm={3} xs={6} style={{ textAlign: 'left' }}>
                             <Typography variant='h6' component='p' style={{ marginLeft: '-50px' }}>
                                 Privacy Policy
                             </Typography>
