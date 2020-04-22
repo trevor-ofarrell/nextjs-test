@@ -29,7 +29,7 @@ export default function CenteredGrid() {
   return (
     <Container className={classes.root}>
       <Grid container spacing={3}>
-        <Grid item sm={10} xs={12} style={{ maxHeight: "100%", height: "100%" }}>
+        <Grid item sm={9} xs={12} style={{ maxHeight: "100%", height: "100%" }}>
           <Paper elevation={0}>
             <Grid container spacing={0}>
               <Grid
@@ -43,7 +43,7 @@ export default function CenteredGrid() {
             </Grid>
           </Paper>
         </Grid>
-        <Grid item sm={2} xs={12} style={{ maxHeight: "100%", height: "100%" }}>
+        <Grid item sm={3} xs={12} style={{ maxHeight: "100%", height: "100%" }}>
           <Card elevation={0} style={{ textAlign: "center" }}>
             <MonetizationOnIcon
               fontSize="large"
@@ -52,7 +52,7 @@ export default function CenteredGrid() {
             <Typography
               variant="h3"
               component="h2"
-              style={{ paddingBottom: "20px", fontWeight: "bold" }}
+              style={{ paddingBottom: "12px", fontWeight: "bold" }}
             >
               500$
             </Typography>

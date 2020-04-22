@@ -24,16 +24,15 @@ const WrapperBox = withStyles({
     display: "table",
     zIndex: "unset",
   },
-})(Container);
+})(Box);
 
 const StyledBoxBlue = withStyles({
   root: {
     background: "#9dd8f4",
     width: "100%",
     height: "100%",
+    maxHeight: '100%',
     display: "flex",
-    justifyContent: "center",
-    alignItems: "center",
     color: "white",
     fontSize: "60px",
     fontFamily: "Arial, Helvetica, sans-serif",
@@ -42,7 +41,7 @@ const StyledBoxBlue = withStyles({
 
 export default function Profile() {
   return (
-    <WrapperBox maxWidth="fixed">
+    <WrapperBox >
       <ProfileNavBar />
       <StyledBoxBlue maxWidth="fixed" style={{ paddingTop: "30px", paddingBottom: "50px" }} >
         <UserGrid />

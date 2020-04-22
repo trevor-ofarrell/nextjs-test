@@ -30,7 +30,7 @@ const StyledBoxBlue = withStyles({
     return(
 
         <StyledBoxBlue>
-            <Grid container spacing={10} style={{ textAlign: 'left', marginTop: '2em', marginBottom: '50px'}}>
+            <Grid container spacing={10} style={{ textAlign: 'left', paddingTop: '2em', paddingBottom: '50px'}}>
                 <Grid item sm={6} xs={12}>
                     <Typography variant='h4' component='h2' style={{ fontWeight: 'bold', marginLeft: '50px', paddingBottom: '30px'}}>
                         Wearible Charity

@@ -51,7 +51,7 @@ export default function CenteredGrid() {
         <Grid item sm={2} xs={6}>
           <Card elevation={0} style={{ textAlign: 'center' }}>
             <MonetizationOnIcon fontSize="large" style={{ marginTop: '50px', marginBottom: '20px' }}/>
-            <Typography variant="h3" component="h2" style={{ paddingBottom: '16px', fontWeight: 'bold' }}>
+            <Typography variant="h3" component="h2" style={{ paddingBottom: '5px', fontWeight: 'bold' }}>
                 500$
             </Typography>
             <p style={{ fontSize: '20px' }}>Money Raised</p>
@@ -60,7 +60,7 @@ export default function CenteredGrid() {
         <Grid item sm={2} xs={6}>
           <Card elevation={0} style={{ textAlign: 'center' }}>
             <FavoriteIcon fontSize="large" style={{ marginTop: '50px', marginBottom: '20px' }}/>
-            <Typography variant="h3" component="h2" style={{ paddingBottom: '16px', fontWeight: 'bold' }}>
+            <Typography variant="h3" component="h2" style={{ paddingBottom: '5px', fontWeight: 'bold' }}>
                 50$
             </Typography>
             <p style={{ fontSize: '20px' }}>Money Donated</p>
