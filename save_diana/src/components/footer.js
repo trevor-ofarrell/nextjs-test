@@ -75,7 +75,7 @@ const StyledBoxBlue = withStyles({
                                 Contact Us
                             </Typography>
                             <Typography variant='h6' component='p' style={{fontWeight: 'bold'}}>
-                                email: diana@gmail.com
+                                email: panichdiana@gmail.com
                             </Typography>
                         </Grid>
                     </Grid>

@@ -1,5 +1,5 @@
 import React from "react";
-import { Button, Backdrop, AppBar, Box, Container } from "@material-ui/core";
+import { Button, Backdrop, AppBar, Box, Container, Typography } from "@material-ui/core";
 import { withStyles, responsiveFontSizes } from "@material-ui/core/styles";
 import Globe from '../components/video'
 import HomeCta from "../components/homeCta";
@@ -36,7 +36,7 @@ root: {
     marginLeft: "0px",
     color: "white",
     fontSize: "25px",
-    fontFamily: "Arial, Helvetica, sans-serif",
+    fontFamily: "Archivo Black, sans-serif",
     overflowY: 'hidden'
 
     },
@@ -50,16 +50,18 @@ export default function homeGlobe() {
             <div style={{overflowY: 'hidden'}}>
                 <StyledBoxBlue maxWidth="fixed">
                     <Globe style={{overflowY: 'hidden'}} />
-                    <h2
+                    <Typography variant="h1" component="h1"
                         style={{
-                        whiteSpace: "pre-line",
-                        marginTop: "-480px",
-                        zIndex: "2",
-                        position: "relative",
+                            whiteSpace: "pre-line",
+                            marginTop: "-480px",
+                            zIndex: "2",
+                            position: "relative",
+                            fontFamily: 'Archivo Black, sans-serif',
+                            fontWeight: 'Bold'
                         }}
                     >
                         {title.join("\n")}
-                    </h2>
+                    </Typography>
                 </StyledBoxBlue>
                 <HomeOptions>
                     <HomeCta/>

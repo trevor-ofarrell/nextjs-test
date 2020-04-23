@@ -42,7 +42,7 @@ export default function MissionStatement() {
           whiteSpace: "pre-line",
         }}
       >
-        <Typography variant="h2" component="h2" style={{ fontWeight: 'bold', paddingBottom: '60px' }}>
+        <Typography variant="h2" component="h2" style={{ fontWeight: 'bold', paddingBottom: '10px' }}>
           MISSION
         </Typography>
         <br />

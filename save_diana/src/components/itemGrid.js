@@ -42,7 +42,7 @@ const useStyles = makeStyles((theme) => ({
 
 const theme = createMuiTheme({
   typography: {
-    fontFamily: 'Archivo Black',
+    fontFamily: 'Archivo Black, sans-serif',
   },
 });
 
