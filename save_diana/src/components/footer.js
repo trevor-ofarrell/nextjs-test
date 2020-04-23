@@ -11,7 +11,7 @@ import {
 
 const StyledBoxBlue = withStyles({
     root: {
-      background: "#9dd8f4",
+      background: "#A4D8EF",
       maxWidth: "100%",
       height: "auto",
       display: "block",
@@ -22,6 +22,7 @@ const StyledBoxBlue = withStyles({
       color: "white",
       fontSize: "60px",
       fontFamily: "Arial, Helvetica, sans-serif",
+      paddingBottom: '40px'
     },
   })(Container);
 
@@ -31,32 +32,31 @@ const StyledBoxBlue = withStyles({
 
         <StyledBoxBlue>
             <Grid container spacing={10} style={{ textAlign: 'left', paddingTop: '2em', paddingBottom: '50px'}}>
-                <Grid item sm={6} xs={12}>
+                <Grid item sm={7} xs={12}>
                     <Typography variant='h4' component='h2' style={{ fontWeight: 'bold', marginLeft: '50px', paddingBottom: '30px'}}>
-                        Wearible Charity
+                        WAVE
                     </Typography>
                     <Typography variant='h6' component='p' style={{marginLeft: '50px', paddingBottom: '20px'}}>
-                        Autonomous reserved instance
-                        management
+                        WEARIBLE CHANGE
                     </Typography>
                     <Container style={{marginLeft: '20px'}}>
                         <a>
-                            <FontAwesomeIcon icon={faTwitter} size="1x" style={{marginRight: '20px'}}/>
+                            <FontAwesomeIcon icon={faTwitter} size="xs" style={{marginRight: '20px'}}/>
                         </a>
                         <a>
-                            <FontAwesomeIcon icon={faFacebook} size="1x" style={{marginRight: '20px'}}/>
+                            <FontAwesomeIcon icon={faFacebook} size="xs" style={{marginRight: '20px'}}/>
                         </a>
                         <a>
-                            <FontAwesomeIcon icon={faLinkedinIn} size="1x" style={{marginRight: '20px'}}/>
+                            <FontAwesomeIcon icon={faLinkedinIn} size="xs" style={{marginRight: '20px'}}/>
                         </a>
                         <a>
-                            <FontAwesomeIcon icon={faInstagram} size="1x" style={{marginRight: '20px'}}/>
+                            <FontAwesomeIcon icon={faInstagram} size="xs" style={{marginRight: '20px'}}/>
                         </a>
                     </Container>
                 </Grid>
-                <Grid item sm={6} xs={12}>
+                <Grid item sm={5} xs={12}>
                     <Grid container spacing={0} style={{ textAlign: 'left', paddingBottom: '50px', paddingLeft: '0px', fontFamily: 'poppins' }}>
-                        <Grid item xs={5} style={{ textAlign: 'left' }}>
+                        <Grid item sm={5} xs={4} style={{ textAlign: 'left' }}>
                             <Typography variant='h6' component='p' style={{fontWeight: 'bold', paddingBottom: '15px'}}>
                                 Company
                             </Typography>
@@ -64,24 +64,18 @@ const StyledBoxBlue = withStyles({
                                 Shop
                             </Typography>
                             <Typography variant='h6' component='p' style={{fontWeight: 'bold', paddingBottom: '15px'}}>
-                                Statment
+                                Mission
                             </Typography>
                             <Typography  variant='h6' component='p' style={{fontWeight: 'bold'}}>
                                 Contact Us
                             </Typography>
                         </Grid>
-                        <Grid item xs={7}>
+                        <Grid item sm={7} xs={7}>
                         <Typography  variant='h6' component='p' style={{fontWeight: 'bold', paddingBottom: '15px'}}>
                                 Contact Us
                             </Typography>
-                            <Typography variant='h6' component='p' style={{fontWeight: 'bold', paddingBottom: '15px'}}>
-                                +000 222 456-567
-                            </Typography>
-                            <Typography variant='h6' component='p' style={{fontWeight: 'bold', paddingBottom: '15px'}}>
-                                +000 222 456-567
-                            </Typography>
                             <Typography variant='h6' component='p' style={{fontWeight: 'bold'}}>
-                                diana@gmail.com
+                                email: diana@gmail.com
                             </Typography>
                         </Grid>
                     </Grid>

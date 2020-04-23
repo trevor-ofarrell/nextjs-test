@@ -18,18 +18,10 @@ const useStyles = makeStyles((theme) => ({
       marginBottom: '50px',
       direction: 'column',
       justify: "space-around",
-      alignItems: "center",
-      justifyContent: "center",
-      maxWidth: '50%',
+      
+      maxWidth: '60%',
       textAlign: 'center',
       paddingRight: '80px'
-    },
-    Paper: {
-      padding: theme.spacing(10),
-      textAlign: 'center',
-      marginBottom: '50px',
-      color: theme.palette.text.default,
-      elevation: '0',
     },
 }));
   
@@ -38,8 +30,8 @@ export default function homeCta() {
     const classes = useStyles()
 
     return (
-        <Container className={classes.root}>
-            <Grid container spacing={0} style={{ marginTop: '60px', marginBottom: '-55px' }}>
+        <Container className={classes.root} style={{ paddingTop: '-180px'}}>
+            <Grid container spacing={0} style={{ marginTop: '20px', marginBottom: '-55px' }}>
                 <Grid item xs={6}>
                     <a href="#statement" style={{marginLeft: "60px", marginBottom: '10px' , textDecoration: 'none', color: 'white'}}>MISSION STATMENT</a>
                 </Grid>

@@ -10,9 +10,11 @@ import {
   Container,
   Typography,
 } from "@material-ui/core";
-import { withStyles, responsiveFontSizes } from "@material-ui/core/styles";
 import ItemColumnRight from "./itemColumnRight";
 import { Card } from "@material-ui/core";
+import { ThemeProvider } from '@material-ui/core/styles';
+import { createMuiTheme, responsiveFontSizes } from '@material-ui/core/styles';
+
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -20,7 +22,7 @@ const useStyles = makeStyles((theme) => ({
     color: "black",
     fontSize: "25px",
     width: "70%",
-    maxWidth: "100%",
+    maxWidth: "70%",
     maxheight: "70%",
     marginTop: "0px",
     marginBottom: "100px",
@@ -38,27 +40,35 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
+const theme = createMuiTheme({
+  typography: {
+    fontFamily: 'Archivo Black',
+  },
+});
+
 export default function ItemGrid() {
   const classes = useStyles();
 
   return (
     <Container className={classes.root} id="shop">
-      <Grid container spacing={10}>
-        <Grid item sm={12}>
+      <Grid container spacing={12}>
+        <Grid item xs={12} sm={12}>
           <Paper elevation={0} className={classes.paper}>
-            <Typography
-              variant="h3"
-              component="h2"
-              style={{ fontWeight: "bold", marginBottom: "-80px" }}
-            >
-              Shop
-            </Typography>
+            <ThemeProvider theme={theme}>
+              <Typography
+                variant="h3"
+                component="h2"
+                style={{ fontWeight: "bold", marginBottom: "-80px" }}
+              >
+                CAUSES
+              </Typography>
+            </ThemeProvider>
           </Paper>
         </Grid>
-        <Grid item sm={6}>
+        <Grid item xs={12} sm={6}>
           <Card elevation={0} style={{ textAlign: "center" }}>
             <img
-              src={"/savemodel.png"}
+              src={"/Rectangle 304.jpg"}
               style={{ position: "relative" }}
               width="460px"
               maxwidth="50%"
@@ -67,7 +77,7 @@ export default function ItemGrid() {
             />
           </Card>
         </Grid>
-        <Grid item sm={6}>
+        <Grid item xs={12} sm={6}>
           <ItemColumnRight />
         </Grid>
       </Grid>

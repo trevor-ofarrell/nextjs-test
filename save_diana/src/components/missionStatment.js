@@ -7,7 +7,7 @@ import Globe from './video'
 
 const StyledBoxBlueBottom = withStyles({
   root: {
-    background: "#9dd8f4",
+    background: "#A4D8EF",
     width: "100%",
     minWidth: "100%",
     height: "800px",
@@ -46,25 +46,17 @@ export default function MissionStatement() {
           MISSION
         </Typography>
         <br />
-        <Typography variant="h5" component="h2">
-          WHAT IF WE COULD USE THE FORGOTTEN MOMENTS OF OUR DAY TO HELP SAVE OUR
-          WORLD?
+        <Typography variant="h5" component="h2" style={{ fontWeight: 'bold'}}>
+          We hide the uncomfortable. Silence the chaos. Conceal dissaray. But how do we fix something that often goes unseen?
         </Typography>
         <br />
-        <Typography variant="h5" component="p">
+        <Typography variant="h5" component="p" style={{ fontWeight: 'bold'}}>
           {" "}
-          IF THE SECONDS WE SPENT WAITING AND SCROLLING, WE COULD USE TO SAVE
-          LIVES.
+          Wave asks that you instead unveil unsettling truths and help shed light on critical issues, just by getting dressed.
         </Typography>
         <br />
-        <Typography variant="h5" component="p">
-          WHAT IF WE COULD DO THIS BY JUST GETTING DRESSED.{" "}
-        </Typography>
-        <br />
-        <Typography variant="h5" component="p">
-          SAVE ASKS THAT YOU ACKNOWLEDGE THE UNSETTLING TRUTH THAT OUR PLANET
-          NEEDS HELP TO TAKE THE FIRST STEP. FOR IF SOMETHING IS TO BE SAVED, IT
-          MUST FIRST BE SEEN.
+        <Typography variant="h5" component="p" style={{ fontWeight: 'bold'}}>
+          Raise funds and awareness for causes you care about through your t-shirt. Inspire change through your interactive wardrobe.
         </Typography>
       </Container>
     </StyledBoxBlueBottom>

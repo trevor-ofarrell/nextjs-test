@@ -23,7 +23,7 @@ export default function SaveApp(props) {
   return (
     <React.Fragment>
       <Head>
-        <title>Save - Wearable Charity</title>
+        <title>WAVE - Wearable Change</title>
         <meta
           name="viewport"
           content="minimum-scale=1, initial-scale=1, width=device-width"

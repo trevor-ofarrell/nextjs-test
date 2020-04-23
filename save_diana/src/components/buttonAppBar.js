@@ -65,13 +65,13 @@ function ButtonAppBar(props) {
       onClose={handleMenuClose}
     >
       <MenuItem >
-        <Link href="/profile">
-            <a style={{textDecoration: 'none', color: 'black'}}><div>My Profile</div></a>
+        <Link href="#shop">
+            <a style={{textDecoration: 'none', color: 'black'}}><div>Shop</div></a>
         </Link>
       </MenuItem>
       <MenuItem>
-      <Link href="/charity">
-            <a style={{textDecoration: 'none', color: 'black'}}>Charity</a>
+      <Link href="#statement">
+            <a style={{textDecoration: 'none', color: 'black'}}>Mission Statement</a>
         </Link>
       </MenuItem>
     </Menu>

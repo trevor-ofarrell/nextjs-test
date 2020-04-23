@@ -36,28 +36,28 @@ export default function ItemColumnRight() {
         alignItems="center"
       >
         <Grid container spacing={6}>
-          <Grid item sm={12}>
+          <Grid item xs={12} sm={12}>
             <Paper elevation={0} style={{fontSize: '35px', fontWeight: 'bold'}}>
-              <Typography variant="h4" component="h2" style={{fontWeight: 'bold'}}>Tapable shirt benefitting Bay Area Homeless Crisis</Typography>
+              <Typography variant="h4" component="h2" style={{fontWeight: 'bold'}}>Bay Area Homeless Crisis Tap-To-Donate T-Shirt</Typography>
             </Paper>
           </Grid>
-          <Grid item sm={12}>
+          <Grid item xs={12} sm={12}>
             <Paper elevation={0} style={{marginBottom: '20px'}}>
               <Typography variant="h5" component="p" style={{ lineHeight: '35px' }}>
-              100% cotton, machine washable T-shirt, embedded NFC for tapable donations. 
+              100% cotton, machine washable T-shirt, embedded with an NFC chip for tapable donations with your phone. 
               </Typography>
             </Paper>
           </Grid>
-          <Grid item sm={12}>
+          <Grid item xs={12} sm={12}>
             <Paper elevation={0} style={{fontSize: '18px'}}>
-              <Typography variant="h6" component="p" style={{ lineHeight: '35px' }}>
-              The Australlian bush fires have been estimated to kill 500 million animals at least 24 humans,
-               and burnes 15 million acres to date. Thousands of people have been displaced and permanently lost their homes.
+              <Typography variant="h6" component="p" style={{ lineHeight: '35px', color: '#6A6767' }}>
+              There are an estimated 35,000 homelesss people in The Bay Area and the number is growing everyday. 
+              The driving cause of this ever growing number is a lack of affordable housing in The Bay Area. 
               </Typography>
             </Paper>
           </Grid>
-          <Grid item sm={12}>
-            <Button style={{ borderWidth: 2, borderColor: 'black', borderRadius: 35, borderStyle:'solid', width: '60%', height: '150%' }}>Select Size</Button>
+          <Grid item xs={12} sm={12}>
+            <Button style={{ borderWidth: 2, borderColor: 'black', borderRadius: 35, borderStyle:'solid', width: '60%', height: '150%', allignItems: 'center' }}>Select Size</Button>
           </Grid>
         </Grid>
       </Grid>
