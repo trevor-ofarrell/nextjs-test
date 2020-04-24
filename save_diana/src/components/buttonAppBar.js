@@ -71,7 +71,7 @@ function ButtonAppBar(props) {
       </MenuItem>
       <MenuItem>
       <Link href="#statement">
-            <a style={{textDecoration: 'none', color: 'black'}}>Mission Statement</a>
+            <a style={{textDecoration: 'none', color: 'black'}}><div>Mission Statement</div></a>
         </Link>
       </MenuItem>
     </Menu>

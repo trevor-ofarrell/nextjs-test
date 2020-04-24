@@ -33,7 +33,7 @@ export default function homeCta() {
         <Container className={classes.root} style={{ paddingTop: '-180px'}}>
             <Grid container spacing={0} style={{ marginTop: '20px', marginBottom: '-55px' }}>
                 <Grid item xs={6}>
-                    <a href="#statement" style={{marginLeft: "60px", marginBottom: '10px' , textDecoration: 'none', color: 'white'}}>MISSION STATMENT</a>
+                    <a href="#statement" style={{marginLeft: "60px", marginBottom: '10px' , textDecoration: 'none', color: 'white'}}>MISSION STATEMENT</a>
                 </Grid>
                 <Grid item xs={6}>
                     <a href="#shop" style={{marginLeft: "60px", textDecoration: 'none', color: 'white'}}>CLICK TO SHOP</a>
