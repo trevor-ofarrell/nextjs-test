@@ -59,7 +59,11 @@ export default function ItemColumnRight() {
             </Paper>
           </Grid>
           <Grid item xs={12} sm={12} style={{textAlign: 'center'}}>
-            <Button style={{ borderWidth: 2, borderColor: 'black', borderRadius: 35, borderStyle:'solid', width: '60%', height: '150%',  }}>Select Size</Button>
+            <Button style={{ borderWidth: 2, borderColor: 'black', borderRadius: 35, borderStyle:'solid', width: '60%', height: '150%',  }}>
+              <Typography variant="body1" component="p">
+                SELECT SIZE
+              </Typography>
+            </Button>
           </Grid>
         </Grid>
       </Grid>

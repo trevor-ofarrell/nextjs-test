@@ -1,13 +1,9 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
-import Paper from '@material-ui/core/Paper';
 import Grid from '@material-ui/core/Grid';
 import Typography from '@material-ui/core/Typography';
-import { Divider } from '@material-ui/core';
-import { Button, Backdrop, AppBar, Box, Container } from "@material-ui/core";
-import dynamic from 'next/dynamic';
-import { ScrollTo, ScrollArea } from "react-scroll-to";
-import MissionStatement from './missionStatment'
+import { Button, Backdrop, AppBar, Box, Container} from "@material-ui/core";
+
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -18,8 +14,7 @@ const useStyles = makeStyles((theme) => ({
       marginBottom: '50px',
       direction: 'column',
       justify: "space-around",
-      
-      maxWidth: '60%',
+      maxWidth: '70%',
       textAlign: 'center',
       paddingRight: '80px'
     },
@@ -32,11 +27,19 @@ export default function homeCta() {
     return (
         <Container className={classes.root} style={{ paddingTop: '-180px'}}>
             <Grid container spacing={0} style={{ marginTop: '20px', marginBottom: '-55px' }}>
-                <Grid item xs={6}>
-                    <a href="#statement" style={{marginLeft: "60px", marginBottom: '10px' , textDecoration: 'none', color: 'white'}}>MISSION STATEMENT</a>
+                <Grid item xs={6} style={{paddingLeft: "50px"}}>
+                    <a href="#statement" style={{marginLeft: "60px", marginBottom: '10px' , textDecoration: 'none', color: 'white' }}>
+                        <Typography variant="h6" component="h5">
+                            MISSION STATEMENT
+                        </Typography >
+                    </a>
                 </Grid>
-                <Grid item xs={6}>
-                    <a href="#shop" style={{marginLeft: "60px", textDecoration: 'none', color: 'white'}}>CLICK TO SHOP</a>
+                <Grid item xs={6} style={{paddingLeft: "50px"}}>
+                    <a href="#shop" style={{marginLeft: "90px", textDecoration: 'none', color: 'white'}}>
+                        <Typography variant="h6" component="h5">
+                            CLICK TO SHOP
+                        </Typography >
+                    </a>
                 </Grid>
                 <Grid item xs={3}>
                     <div/>

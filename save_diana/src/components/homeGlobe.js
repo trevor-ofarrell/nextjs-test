@@ -3,6 +3,8 @@ import { Button, Backdrop, AppBar, Box, Container, Typography } from "@material-
 import { withStyles, responsiveFontSizes } from "@material-ui/core/styles";
 import Globe from '../components/video'
 import HomeCta from "../components/homeCta";
+import { makeStyles } from '@material-ui/core/styles';
+
 
 
 const StyledBoxBlue = withStyles({
@@ -20,7 +22,7 @@ const StyledBoxBlue = withStyles({
       color: "white",
       overflowY: 'hidden',
       fontSize: "60px",
-      fontFamily: "Arial, Helvetica, sans-serif",
+      fontFamily: "Archivo Black, sans-serif",
     },
 })(Container);
 
@@ -44,24 +46,27 @@ root: {
 
 const title = ["\t" + "WAVE", "WEARABLE CHANGE"];
 
+const useStyles = makeStyles((theme) => ({
+    root: {
+      flexGrow: 2 ,
+        fontFamily: 'Archivo Black, sans-serif',
+    },
+}));
+
 export default function homeGlobe() {
+    const classes = useStyles()
 
     return(
-            <div style={{overflowY: 'hidden'}}>
+            <div className={classes.root} style={{overflowY: 'hidden'}}>
                 <StyledBoxBlue maxWidth="fixed">
                     <Globe style={{overflowY: 'hidden'}} />
-                    <Typography variant="h1" component="h1"
+                    <Typography id="hometitle" variant="h1" component="h1"
                         style={{
                             whiteSpace: "pre-line",
                             marginTop: "-480px",
                             zIndex: "2",
                             position: "relative",
-                            fontFamily: 'Archivo Black, sans-serif',
-                            fontWeight: 'Bold',
-                            fontStyle: 'normal',
-                            fontWeight: 'bold',
-                            fontSize: '80px',
-                            lineHeight: '124.9%',
+                      
                         }}
                     >
                         {title.join("\n")}

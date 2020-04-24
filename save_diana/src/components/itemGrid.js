@@ -12,9 +12,8 @@ import {
 } from "@material-ui/core";
 import ItemColumnRight from "./itemColumnRight";
 import { Card } from "@material-ui/core";
-import { ThemeProvider } from '@material-ui/core/styles';
-import { createMuiTheme, responsiveFontSizes } from '@material-ui/core/styles';
-
+import { ThemeProvider } from "@material-ui/core/styles";
+import { createMuiTheme, responsiveFontSizes } from "@material-ui/core/styles";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -41,9 +40,7 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 const theme = createMuiTheme({
-  typography: {
-    fontFamily: 'Archivo Black, sans-serif',
-  },
+ 
 });
 
 export default function ItemGrid() {
@@ -51,21 +48,16 @@ export default function ItemGrid() {
 
   return (
     <Container className={classes.root} id="shop">
-      <Grid container spacing={12}>
+      <Grid container>
         <Grid item xs={12} sm={12}>
           <Paper elevation={0} className={classes.paper}>
             <ThemeProvider theme={theme}>
               <Typography
                 variant="h3"
                 component="h2"
-                style={{ 
-                  fontWeight: "bold",
-                  marginBottom: "-20px",
-                  fontWeight: 'Bold',
-                  fontStyle: 'normal',
-                  fontWeight: 'bold',
-                  fontSize: '41px',
-                  lineHeight: '45px',
+                id="causes"
+                style={{
+                  marginBottom: "-20px",                 
                 }}
               >
                 CAUSES
@@ -77,13 +69,13 @@ export default function ItemGrid() {
           <Card elevation={0} style={{ textAlign: "center" }}>
             <img
               src={"/Rectangle 304.jpg"}
-              style={{ 
+              style={{
                 position: "relative",
                 maxWidth: "100%",
                 height: "auto",
-                width: 'auto',
+                width: "auto",
                 marginRight: "0px",
-                marginTop: '50px',
+                marginTop: "50px",
               }}
             />
           </Card>

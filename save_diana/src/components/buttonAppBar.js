@@ -10,7 +10,7 @@ import Menu from '@material-ui/core/Menu';
 import AccountCircle from '@material-ui/icons/AccountCircle';
 import MenuItem from '@material-ui/core/MenuItem';
 import Link from 'next/link';
-import { Box, Container } from "@material-ui/core";
+import { Box, Container, Typography } from "@material-ui/core";
 
 
 const styles = {
@@ -66,12 +66,16 @@ function ButtonAppBar(props) {
     >
       <MenuItem >
         <Link href="#shop">
-            <a style={{textDecoration: 'none', color: 'black'}}><div>Shop</div></a>
+            <a style={{textDecoration: 'none', color: 'black'}}>
+              <Typography variant="h6" component="h6" style={{width: '170px'}}>Shop</Typography>
+            </a>
         </Link>
       </MenuItem>
       <MenuItem>
       <Link href="#statement">
-            <a style={{textDecoration: 'none', color: 'black'}}><div>Mission Statement</div></a>
+            <a style={{textDecoration: 'none', color: 'black'}}>
+              <Typography variant="h6" component="h6">Mission Statement</Typography>
+            </a>
         </Link>
       </MenuItem>
     </Menu>
@@ -83,7 +87,6 @@ function ButtonAppBar(props) {
           <Toolbar>
             <IconButton className={classes.customHoverFocus} 
               edge="end"
-              aria-label="account of current user"
               aria-controls={menuId}
               aria-haspopup="true"
               onClick={handleProfileMenuOpen}
