@@ -44,10 +44,6 @@ export default function MissionStatement() {
       >
         <Typography variant="h2" component="h2" id="mission" style={{ 
             paddingBottom: '10px',
-            fontWeight: "bold",
-            fontWeight: 'Bold',
-            fontStyle: 'normal',
-            fontWeight: 'bold',
             fontSize: '60px',
             lineHeight: '65px',
           }}>

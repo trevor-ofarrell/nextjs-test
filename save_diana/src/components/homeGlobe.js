@@ -44,8 +44,6 @@ root: {
     },
 })(Box);
 
-const title = ["\t" + "WAVE", "WEARABLE CHANGE"];
-
 const useStyles = makeStyles((theme) => ({
     root: {
       flexGrow: 2 ,
@@ -69,7 +67,14 @@ export default function homeGlobe() {
                       
                         }}
                     >
-                        {title.join("\n")}
+                        WAVE
+                    </Typography>
+                    <Typography id="hometitle2" variant="h1" component="h1"
+                        style={{
+                            position: "relative",
+                        }}
+                    >
+                        WEARABLE CHANGE
                     </Typography>
                 </StyledBoxBlue>
                 <HomeOptions>
