@@ -37,7 +37,7 @@ const StyledBoxBlue = withStyles({
                         WAVE
                     </Typography>
                     <Typography variant='h6' component='p' style={{marginLeft: '50px', paddingBottom: '20px'}}>
-                        WEARIBLE CHANGE
+                        WEARABLE CHANGE
                     </Typography>
                     <Container style={{marginLeft: '20px'}}>
                         <a>

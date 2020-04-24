@@ -42,7 +42,7 @@ root: {
     },
 })(Box);
 
-const title = ["\t" + "WAVE", "WEARIBLE CHANGE"];
+const title = ["\t" + "WAVE", "WEARABLE CHANGE"];
 
 export default function homeGlobe() {
 
