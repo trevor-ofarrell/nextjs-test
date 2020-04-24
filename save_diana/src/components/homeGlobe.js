@@ -57,7 +57,11 @@ export default function homeGlobe() {
                             zIndex: "2",
                             position: "relative",
                             fontFamily: 'Archivo Black, sans-serif',
-                            fontWeight: 'Bold'
+                            fontWeight: 'Bold',
+                            fontStyle: 'normal',
+                            fontWeight: 'bold',
+                            fontSize: '80px',
+                            lineHeight: '124.9%',
                         }}
                     >
                         {title.join("\n")}

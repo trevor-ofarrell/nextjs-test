@@ -58,7 +58,15 @@ export default function ItemGrid() {
               <Typography
                 variant="h3"
                 component="h2"
-                style={{ fontWeight: "bold", marginBottom: "-80px" }}
+                style={{ 
+                  fontWeight: "bold",
+                  marginBottom: "-20px",
+                  fontWeight: 'Bold',
+                  fontStyle: 'normal',
+                  fontWeight: 'bold',
+                  fontSize: '41px',
+                  lineHeight: '45px',
+                }}
               >
                 CAUSES
               </Typography>
@@ -69,11 +77,14 @@ export default function ItemGrid() {
           <Card elevation={0} style={{ textAlign: "center" }}>
             <img
               src={"/Rectangle 304.jpg"}
-              style={{ position: "relative" }}
-              width="460px"
-              maxwidth="50%"
-              height="auto"
-              marginright="100px"
+              style={{ 
+                position: "relative",
+                maxWidth: "100%",
+                height: "auto",
+                width: 'auto',
+                marginRight: "0px",
+                marginTop: '50px',
+              }}
             />
           </Card>
         </Grid>
