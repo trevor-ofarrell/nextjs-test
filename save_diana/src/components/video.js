@@ -16,7 +16,7 @@ class Globe extends Component {
     render () {
         return (
             <Container style={{ overflowY: 'hidden', maxWidth: '100%' }}>
-                <video id="background-video" loop autoPlay style={{ minWidth: '2em', maxWidth: '1300px'}}>
+                <video id="background-video" loop autoPlay muted style={{ minWidth: '2em', maxWidth: '1300px'}}>
                     <source src={this.state.videoURL} type="video/mp4" />
                     <source src={this.state.videoURL} type="video/ogg" />
                     Your browser does not support the video tag.
