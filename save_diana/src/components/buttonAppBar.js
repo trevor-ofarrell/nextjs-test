@@ -21,7 +21,7 @@ const styles = {
     flexGrow: 1,
   },
   IconButton: {
-    marginLeft: -12,
+    marginLeft: -1,
     marginRight: 20,
   },
 };
@@ -29,7 +29,7 @@ const styles = {
 const useStyles = makeStyles(theme => ({
   customHoverFocus: {
     color: 'white',
-    "&:hover, &.Mui-focusVisible": { backgroundColor: "lightblue" }
+    "&:hover, &.Mui-focusVisible": { backgroundColor: "white" }
   }
 }));
 
@@ -63,10 +63,12 @@ function ButtonAppBar(props) {
       transformOrigin={{ vertical: 'top', horizontal: 'right' }}
       open={isMenuOpen}
       onClose={handleMenuClose}
+      onMouseLeave={handleMenuClose}
+      
     >
-      <MenuItem >
-        <Link href="#shop">
-            <a style={{textDecoration: 'none', color: 'black'}}>
+      <MenuItem afterClick={handleMenuClose}>
+        <Link href="#shop" >
+            <a  style={{textDecoration: 'none', color: 'black'}}>
               <Typography variant="h6" component="h6" style={{width: '170px'}}>Shop</Typography>
             </a>
         </Link>

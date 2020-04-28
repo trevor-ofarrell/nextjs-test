@@ -16,34 +16,22 @@ import MissionStatement from "../components/missionStatment";
 import Globe from "../components/video";
 import Grid from "@material-ui/core/Grid";
 import HomeGlobe from "../components/homeGlobe";
-
+import { sizing, width } from '@material-ui/system';
 // Only need to use this pattern if we are going to make reusable
 // notice the new component, WrapperBox - if we want to reuse then it
 //needs to be  in /components, otherwise, just write a single page
 // style like you did in `const style =...`
 //
-const WrapperBox = withStyles({
-  root: {
-    background: "#A4D8EF",
-    width: "100%",
-    height: "100%",
-    display: "table",
-    overflowY: "hidden",
-    zIndex: "unset",
-    overflowY: "hidden",
-  },
-})(Box);
-
 const StyledBoxWhite = withStyles({
   root: {
     background: "#FFFFFF",
     width: "100%",
     minWidth: "100%",
+    width: '100%',
     maxHeight: "100%",
     display: "flex",
     justifyContent: "center",
     alignItems: "center",
-    overflowY: "hidden",
     color: "white",
     fontSize: "60px",
   },
@@ -54,7 +42,7 @@ const styles = {
   root: {
     flexGrow: 1,
     lineHeight: "20px",
-    overflowY: "hidden",
+    overflow: 'hidden',
   },
   br: {
     lineHeight: "20px",
@@ -68,11 +56,14 @@ const styles = {
 
 const App = () => (
   <div>
-    <WrapperBox fixed>
+    <Container width={1} maxWidth={1} style={{ background: "#A4D8EF", overflow: 'hidden' }}>
       <Grid container>
         <Grid item xs={12}>
           <ButtonAppBar />
-          <HomeGlobe />
+        </Grid>
+        <Grid item xs={12}>
+          <HomeGlobe/>
+          <HomeCta />
         </Grid>
         <Grid item xs={12}>
           <StyledBoxWhite>
@@ -84,7 +75,7 @@ const App = () => (
           <Footer />
         </Grid>
       </Grid>
-    </WrapperBox>
+    </Container>
   </div>
 );
 

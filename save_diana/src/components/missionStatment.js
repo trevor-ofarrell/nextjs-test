@@ -16,7 +16,6 @@ const StyledBoxBlueBottom = withStyles({
     position: "relative",
     justifyContent: "center",
     alignItems: "center",
-    marginLeft: "0px",
     color: "white",
     fontSize: "60px",
     fontFamily: "Arial, Helvetica, sans-serif",
@@ -34,7 +33,7 @@ export default function MissionStatement() {
         style={{
           display: "inline-block",
           paddingTop: "-1500px",
-          maxWidth: "75%",
+          maxWidth: "80%",
           zIndex: "2",
           position: "relative",
           textAlign: "center",

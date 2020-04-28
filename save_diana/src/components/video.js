@@ -1,29 +1,15 @@
-'use strict';
-
 import React, {Component} from 'react';
 import { Button, Backdrop, AppBar, Box, Container } from "@material-ui/core";
 
 
-class Globe extends Component {
-    constructor (props) {
-        super(props);
+export default function Globe() {
 
-        this.state = {
-            videoURL: 'Blue_Globe_04_hires.mp4'
-        }
-    }
-
-    render () {
-        return (
-            <Container style={{ overflowY: 'hidden', maxWidth: '100%' }}>
-                <video id="background-video" loop autoPlay muted style={{ minWidth: '2em', maxWidth: '1300px'}}>
-                    <source src={this.state.videoURL} type="video/mp4" />
-                    <source src={this.state.videoURL} type="video/ogg" />
-                    Your browser does not support the video tag.
-                </video>
-            </Container>
-        )
-    }
-};
-
-export default Globe;
+    return (
+        <Container style={{ overflow: 'hidden', maxWidth: '100%' }}>
+            <img id="background-video" src="Globe_gif2.gif" style={{ marginTop: '80px', paddingBottom: '40px' }}
+            alt=" Your browser does not support the video tag."
+            >
+            </img>
+        </Container>
+    )
+}

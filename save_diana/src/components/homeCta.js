@@ -16,7 +16,8 @@ const useStyles = makeStyles((theme) => ({
       justify: "space-around",
       maxWidth: '70%',
       textAlign: 'center',
-      paddingRight: '80px'
+      paddingRight: '80px',
+      zIndex: '6',
     },
 }));
   
@@ -25,8 +26,8 @@ export default function homeCta() {
     const classes = useStyles()
 
     return (
-        <Container className={classes.root} style={{ paddingTop: '-180px'}}>
-            <Grid container spacing={0} style={{ marginTop: '20px', marginBottom: '-55px' }}>
+        <Container className={classes.root} >
+            <Grid container spacing={0} style={{ marginTop: '20px', marginBottom: '55px' }}>
                 <Grid item xs={6} style={{paddingLeft: "50px"}}>
                     <a href="#statement" style={{marginLeft: "60px", marginBottom: '10px' , textDecoration: 'none', color: 'white' }}>
                         <Typography variant="h6" component="h5">
@@ -44,14 +45,14 @@ export default function homeCta() {
                 <Grid item xs={3}>
                     <div/>
                 </Grid>
-                <Grid item xs={3} style={{ textAlign: 'center', paddingTop: '30px'}}>
-                    <div style={{ position: 'absolute', width: '60px', height: '0px', top: '840px', borderWidth: '1px', borderColor: 'white', borderStyle:'solid', transform: 'rotate(90deg)' }} />
+                <Grid item xs={3} style={{ textAlign: 'center', paddingTop: '30px', marginLeft: '-40px'}}>
+                    <div style={{ position: 'absolute', width: '140px', height: '0px', top: '880px', borderWidth: '1px', borderColor: 'white', borderStyle:'solid', transform: 'rotate(90deg)' }} />
                 </Grid>
                 <Grid item xs={3}>
                     <div/>
                 </Grid>
                 <Grid item xs={3} style={{ textAlign: 'center', paddingTop: '30px' }}>
-                    <div style={{ position: 'absolute', width: '60px', height: '0px', top: '840px', borderWidth: '1px', borderColor: 'whitea', borderStyle:'solid', transform: 'rotate(90deg)' }} />
+                    <div style={{ position: 'absolute', width: '140px', height: '0px', top: '880px', borderWidth: '1px', borderColor: 'white', borderStyle:'solid', transform: 'rotate(90deg)' }} />
                 </Grid>
             </Grid>
         </Container>

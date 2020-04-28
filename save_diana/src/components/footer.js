@@ -32,7 +32,7 @@ const StyledBoxBlue = withStyles({
 
         <StyledBoxBlue>
             <Grid container spacing={10} style={{ textAlign: 'left', paddingTop: '2em', paddingBottom: '50px'}}>
-                <Grid item sm={7} xs={12}>
+                <Grid item sm={5} md={7} xs={12}>
                     <Typography variant='h4' component='h2' style={{ fontWeight: 'bold', marginLeft: '50px', paddingBottom: '30px'}}>
                         WAVE
                     </Typography>

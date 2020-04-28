@@ -65,7 +65,7 @@ export default function ItemGrid() {
             </ThemeProvider>
           </Paper>
         </Grid>
-        <Grid item xs={12} sm={6}>
+        <Grid item xs={12} sm={12} md={6}>
           <Card elevation={0} style={{ textAlign: "center" }}>
             <img
               src={"/Rectangle 304.jpg"}
@@ -80,7 +80,7 @@ export default function ItemGrid() {
             />
           </Card>
         </Grid>
-        <Grid item xs={12} sm={6}>
+        <Grid item xs={12} sm={12} md={6}>
           <ItemColumnRight />
         </Grid>
       </Grid>
