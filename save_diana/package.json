@@ -15,7 +15,7 @@
     "@progress/kendo-react-form": "^3.12.0",
     "@progress/kendo-react-inputs": "^3.12.0",
     "@progress/kendo-react-intl": "^3.12.0",
-    "next": "^9.3.5",
+    "next": "^11.1.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-meta-tags": "^0.7.4",
