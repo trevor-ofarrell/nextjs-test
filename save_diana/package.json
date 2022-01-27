@@ -22,7 +22,7 @@
     "react-scroll-to": "^3.0.0-beta.6",
     "react-scroll-to-component": "^1.0.2",
     "social-media-icons-react": "^1.0.10",
-    "three": "^0.115.0",
+    "three": "^0.137.0",
     "typeface-roboto": "0.0.75"
   },
   "license": "UNLICENSED",
